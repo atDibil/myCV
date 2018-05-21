@@ -1,0 +1,122 @@
+:root{
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+html{
+    box-sizing: border-box;
+   
+}
+
+
+body{
+    color: rgb(158,178,165);
+    animation-name: animatationTwo;
+    animation-duration: 2s;
+    
+}
+
+@keyframes animatationTwo{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.mainContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+      
+}
+
+.profileContainer{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 770px;
+    height: 223px;
+    background-color: rgb(37, 37, 37);
+    padding: 15px;
+    opacity: 1;
+}
+
+.img{
+    
+    opacity: 0.8;
+}
+.pic{
+    margin-top:10px;
+    margin-left: 50px;
+}
+
+img:hover{
+    opacity: 1;
+
+}
+
+
+.infos{
+    text-align: center;
+    color:white;
+}
+
+.aboutContainer{
+    margin: auto 10px;
+    text-align: center;
+    width: 446px;
+    height: 180px;
+    background-color: rgba(235, 235, 235, 0.20);
+    
+}
+
+.boxContainer{
+    text-align: center;
+    margin: 50px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.boxLeft{
+    border-right: 1px solid rgb(214,214,214);
+    padding: 20px;
+    animation-name: animationOne;
+    animation-duration: 3s;
+}
+
+@keyframes animationOne{
+    0%{
+        margin-left: -1000px;
+
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+.primaryBox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 10px;
+}
+
+.otherBox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:30px;
+    padding: 10px;
+}
+
+.boxMiddle{
+    border-right: 1px solid rgb(214,214,214);
+    padding: 20px;
+    margin-left: 80;
+    text-align: initial;
+  
+}
+
+
+
+.boxRight{
+    padding: 20px;
+}
+
